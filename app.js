@@ -22,12 +22,13 @@ app.set('view engine', 'ejs');
 // Set public folder
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('', function(req, res) {
-	// res.send('Its working!');
-	res.render('index', {
-		title: 'Home'
-	});
-});
+// Set front ruotes
+var pages = require('./routes/pages');
+app.use('/', pages);
+
+// Set admin ruotes
+var adminPages = require('./routes/admin_pages');
+app.use('/admin/pages', adminPages);
 
 // Start the server
 var port = 3000;

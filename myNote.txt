@@ -41,6 +41,12 @@
 	> render index in app.js
 	> add title as an oject to home page	
 
+007 07 routes setup
+
+	> $ touch routes/page.js
+	> $ touch routes/admin_pages.js
+	> in app.js, set front and admin routes	
+
 
 
 
