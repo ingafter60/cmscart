@@ -1,0 +1,13 @@
+003 03 project setup 1
+
+	> create root folder
+	> $ npm init
+	> create db: cmscart + table: pages
+
+004 04 project setup 2
+
+	> $ npm install express ejs --save
+	> $ touch app.js
+	> in app.js, create server
+
+
