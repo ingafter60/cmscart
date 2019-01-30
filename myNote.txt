@@ -9,5 +9,39 @@
 	> $ npm install express ejs --save
 	> $ touch app.js
 	> in app.js, create server
+	> $ md models public routes views
+	> $ npm install nodemon -g
+	> start server: nodemon app.js
+	> :)
+	> git init
+	> create and add to repository
+
+005 05 connecting to mongodb
+
+	> $ git checkout -b "1_MongoDBAndTemplate"
+	> $ npm install mongoose --save
+	> $ mkdir config
+	> $ touch config/database.js	
+	> $ git branch -m "1_AddedMongoDB"
+	> $ git commit -m "005 05 connecting to mongodb"
+	> $ git push origin master
+	> :)
+
+006 06 templates
+
+	> $ git checkout -b "2_TemplateAndRoutes"
+	> in _layouts create:
+		> $ touch header.ejs footer.ejs adminheader.ejs adminfooter.ejs
+	> $ touch views\index.ejs
+	> Add bootstrap 3 layout to header.ejs footer.ejs adminheader.ejs adminfooter.ejs	
+	> in index.ejs
+		<% include _layouts/header %>
+			<h1>Hello there</h1>
+		<% include _layouts/footer %>
+	> render index in app.js
+	> add title as an oject to home page	
+
+
+
 
 
